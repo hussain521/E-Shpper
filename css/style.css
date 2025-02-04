@@ -1,0 +1,232 @@
+    :root{
+    --main-color:#fe980f;
+    --second-color:#f0f0e9;
+    --third-color:#b4b1ab;
+    --icon-color:#696763;
+    }
+    *{
+    padding: 0 !important;
+    margin: 0 ;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+    transition: 0.2s;
+    }
+
+    @keyframes arrow {
+    from {
+        bottom: 30px;
+    }
+    to {
+        bottom: 40px;
+    }
+    }
+    .arrow{
+    position: fixed;
+    bottom: 30px;
+    right: 30px  ;
+    animation: arrow 0.8s ease-in-out infinite;
+    z-index: 100;
+    }
+    .top{
+
+    background-color: var(--second-color);
+    }
+    .top a{
+    color:var(--icon-color) ;
+    }
+    .social .face:hover a{
+    background-color: rgb(59, 134, 239);
+    color: white;
+    }
+    .social .google:hover a{
+    background-color: red;
+    color: white;
+    }
+    .social .twitter:hover a{
+    color: white;
+    background-color: rgb(0, 200, 255);
+    }
+    .social .instagram:hover a{
+    color: white;
+    background-color: #fb0966;
+    }
+    .social .linkedin:hover a{
+    color: white;
+    background-color: rgb(0, 119, 255);
+    }
+    .contact a{
+    font-size: 11px;
+    }
+    .center .row{
+    border:var(--icon-color) ;
+    }
+    .center li{
+    font-size: 13px ;
+    }
+    .center li a:hover{
+    color: var(--main-color);
+    }
+    .center a{
+    font-size: 12px;
+    color: var(--icon-color);
+    }
+    .btn-group a:hover{
+    color: var(--main-color);
+    }
+    header form input{
+    outline: none;
+    background-color: inherit;
+    }
+    header form .search{
+    background-color: var(--second-color);
+    }
+    header form .search i{
+    color: var(--icon-color);
+    }
+    header ul li a{
+    color: var(--icon-color) !important;
+    }
+    header ul li a:hover{
+    color: var(--main-color) !important;
+    }
+    .home h1{
+    color: var(--third-color);
+    }
+    .home h1 span{
+    color: var(--main-color);
+    }
+    .home .btn{
+    color: white !important;
+    background-color: var(--main-color) !important;
+    }
+    .border-top{
+    border: var(--third-color);
+    }
+    .Category .category-title{
+    margin-top: -12px;
+    color: var(--main-color);
+
+    }
+    .Category .Featured{
+    margin-top: -14px;
+    color: var(--main-color);
+    } 
+    .Category ul li, .Category ul li a{
+    font-size: 12px !important;
+    cursor: grab;
+    color: var(--icon-color);
+    }
+    .Category ul li:hover, .Category ul li a:hover{
+    color: var(--main-color);
+    }
+    .Category .card-title{
+    color: var(--main-color);
+    }
+    .Category .card-text{
+    color: var(--icon-color);
+    }
+    .Category .card{
+    position: relative;
+    transition:all 0.3s ease-in-out;
+    }
+    .Category .card::after{
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    background-color: #fe960f4b; 
+    display: none;
+    transition: height 0.6s ease 0s;
+    display: block;
+    }
+
+
+    .Category  .card:hover::after{
+    display:block;
+    height:75%;
+    }
+    .card-footer a{
+    font-size: 12px;
+    color: var(--icon-color);
+    }
+    .card-footer a:hover{
+    color: var(--main-color);
+    }
+
+    .Category .btn{
+    background-color: var(--second-color);
+    }
+    .Category .btn:hover{
+    background-color: var(--main-color);
+    color: white;
+    }
+    .Category .navbar-nav li:hover{
+    background-color: var(--main-color);
+    }
+    .Category .navbar-nav li a{
+    color: white;
+    font-size: 15px !important;
+    }
+    .Category .navbar-nav li:hover a{
+    color: white;
+    }
+    .Category .navbar-nav{
+    background-color: #222222 !important;
+    }
+    .Category .orang{
+    background-color: var(--main-color);
+    color: white;
+    }
+    .Featured{
+    width: 35%;
+    }
+    .Category .navbar{
+    background-color: #222222 !important;
+    }
+    
+    footer{
+    background-color: var(--second-color);
+    }
+    footer h2{
+    font-size: 16px !important;
+    color: var(--icon-color);
+    }
+    footer .map{
+    background-image: url(../images/home/map.png);
+    }
+
+    footer .map p{
+    font-size: 12px;
+    }
+    footer .card-text{
+    color: #696763;
+    font-size: 12px;
+    }
+    footer input{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    }
+    footer button{
+    outline: none;
+    border: none;
+    }
+    footer form div{
+    background-color: white;
+    border: 1px solid var(--icon-color);
+    }
+    footer .text-search{
+    color: #696763;
+    font-size: 12px;
+    }
+    footer ul li a{
+    color: var(--icon-color) !important;
+    }
+    footer ul li a:hover{
+
+    color: var(--main-color)    !important;
+    }
+
